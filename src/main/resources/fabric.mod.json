@@ -20,7 +20,8 @@
 		],
 		"client": [
 			"com.hunterttp.petinventory.PetInventoryClient"
-		]
+		],
+		"cardinal-components-entity": ["com.hunterttp.petinventory.init.ModComponents"]
 	},
 	"mixins": [
 		"pet-inventory.mixins.json",
@@ -29,11 +30,18 @@
 			"environment": "client"
 		}
 	],
+	"custom": {
+		"cardinal-components": [
+			"petinventory:pet_inventory"
+		]
+	},
 	"depends": {
 		"fabricloader": ">=0.16.13",
 		"minecraft": "~1.21.5",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cardinal-components-base": ">=6.3.1",
+		"cardinal-components-entity": ">=6.3.1"
 	},
 	"suggests": {
 		"another-mod": "*"

@@ -1,5 +1,7 @@
 package com.hunterttp.petinventory;
 
+import com.hunterttp.petinventory.event.PetInteractionHandler;
+import com.hunterttp.petinventory.init.ModComponents;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.entity.passive.TameableEntity;
@@ -16,5 +18,6 @@ public class PetInventory implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		PetInteractionHandler.register();
 	}
 }
