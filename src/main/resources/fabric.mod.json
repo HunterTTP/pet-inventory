@@ -21,7 +21,7 @@
 		"client": [
 			"com.hunterttp.petinventory.PetInventoryClient"
 		],
-		"cardinal-components-entity": ["com.hunterttp.petinventory.init.ModComponents"]
+		"cardinal-components-entity": ["com.hunterttp.petinventory.init.PetInventoryComponentInitializer"]
 	},
 	"mixins": [
 		"pet-inventory.mixins.json",
